@@ -3,6 +3,8 @@ const nodemailer = require('nodemailer')
 
 const logger = pino()
 
+let morganConfig = `:date[iso] :method :url :status :response-time ms :remote-addr :http-version :referrer :user-agent`
+
 const sendMail = async (
   subject,
   content
@@ -52,4 +54,4 @@ const sendMail = async (
   });
 };
 
-module.exports = { logger, sendMail }
+module.exports = { logger, sendMail, morganConfig }

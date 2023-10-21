@@ -1,10 +1,14 @@
 require('express-async-errors')
 require('./wakey')
+const morgan = require('morgan');
+const helmet = require('helmet') ;
 const app = require('./app')
-const { logger } = require('./configs/index.config')
+const { logger, morganConfig } = require('./configs/index.config')
 
 const errorMiddleware = require('./errors')
 
+app.use(morgan(morganConfig));
+app.use(helmet())
 app.get('/health', (req, res) => res.sendStatus(200))
 app.use(errorMiddleware)
 
