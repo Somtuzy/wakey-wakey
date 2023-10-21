@@ -1,5 +1,8 @@
 How To Set Your env
 
+PORT
+- The port your server is running on.
+
 SERVER:
 - Add as many server health routes in your .env and separate with a comma exactly how it is above.
 DEPLOYHOOKS: 
@@ -25,3 +28,6 @@ TO
 
 NAME
 - The name of the person you wish to send the notifications to their mail box.
+
+INTERVAL
+- How frequently you would like to check your server in milliseconds. I recommend 300000 for free instances.
