@@ -1,0 +1,27 @@
+How To Set Your env
+
+SERVER:
+- Add as many server health routes in your .env and separate with a comma exactly how it is above.
+DEPLOYHOOKS: 
+- Add their respective deploy hooks in the exact order you listed the servers above.
+- Replace 'deployHookForServerOne' and 'deployHookForServerTwo, with your respective deploy hooks using the guide below:
+- Here's what a deploy hook looks like: 
+https://api.render.com/deploy/srv-gghhhhhjjjjjjjjhjkgj?key=jkjkkkkjjjk
+This server was deployed on render. It will mosty likely look different for servers deployed on a different service.
+
+MAIL_USERNAME:
+- Add your gmail credentials for sending email notifications with nodemailer
+- Your username is your email address without the @gmail.com
+
+MAIL_ADDRESS
+- Your can generate your password with the link below: 
+https://security.google.com/settings/security/apppasswords
+
+MAIL_PASSWORD
+- Your mail address is your gmail address
+
+TO
+- A different mail address where you want to get notifications.
+
+NAME
+- The name of the person you wish to send the notifications to their mail box.
