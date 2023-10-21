@@ -46,4 +46,4 @@ function getOriginalUrl(route) {
     return `${parts[0]}${parts[1]}${parts[2]}`
 }
 
-setInterval(checkAndWakeServers, 300000)
+setInterval(checkAndWakeServers, process.env.INTERVAL)
