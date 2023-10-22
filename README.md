@@ -17,15 +17,15 @@ Wakey Wakey is an accountability ninja server built for the sole purpose of chec
 • Use npm run dev to run the program.
 
 ## Deployment Guide
-• Configure your build command to "npm run build"
-• Configure your start command to "npm start"
-• Copy your health route which should be "https://example.com/health" where example.com is your server url.
-• Copy out your redeploy hook.
-• Create a second service using the same repo and fill in the environmental variables of SERVERS and DEPLOYHOOKS with the health route and deploy hook of the first service.
-• Fill in the other environmental variables using guide.txt.
-• Copy out the health route and deploy hook of the second service and fill in the first service's environmental variable too.
-• Fill in the other environmental variables using guide.txt.
-• Deploy both services to keep each other running.
-• Finally, copy the health route and deploy hook of your main service or any other service you deploy going forward and fill it in the SERVERS and DEPLOTHOOKS environmental variables of either of the services and deploy your server.
+• Configure your build command to "npm run build" <br>
+• Configure your start command to "npm start" <br>
+• Copy your health route which should be "https://example.com/health" where example.com is your server url. <br>
+• Copy out your redeploy hook. <br>
+• Create a second service using the same repo and fill in the environmental variables of SERVERS and DEPLOYHOOKS with the health route and deploy hook of the first service. <br>
+• Fill in the other environmental variables using guide.txt. <br>
+• Copy out the health route and deploy hook of the second service and fill in the first service's environmental variable too. <br>
+• Fill in the other environmental variables using guide.txt. <br>
+• Deploy both services to keep each other running. <br>
+• Finally, copy the health route and deploy hook of your main service or any other service you deploy going forward and fill it in the SERVERS and DEPLOTHOOKS environmental variables of either of the services and deploy your server. <br>
 
 Wakey wakey, those requests won't get themselves to the database and send back a response.
